@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Resume Builder</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form-section">
+      <h2>Resume Form</h2>
+      <input type="text" id="name" placeholder="Name">
+      <input type="email" id="email" placeholder="Email">
+      <input type="text" id="phone" placeholder="Phone">
+      <textarea id="education" placeholder="Education"></textarea>
+      <textarea id="skills" placeholder="Skills"></textarea>
+      <textarea id="experience" placeholder="Experience"></textarea>
+      <textarea id="projects" placeholder="Projects"></textarea>
+      <button onclick="downloadPDF()">Download as PDF</button>
+    </div>
+
+    <div class="resume-preview" id="resume">
+      <h1 id="r-name">Your Name</h1>
+      <p><strong>Email:</strong> <span id="r-email"></span></p>
+      <p><strong>Phone:</strong> <span id="r-phone"></span></p>
+      <h3>Education</h3>
+      <p id="r-education"></p>
+      <h3>Skills</h3>
+      <ul id="r-skills"></ul>
+      <h3>Work Experience</h3>
+      <p id="r-experience"></p>
+      <h3>Projects</h3>
+      <p id="r-projects"></p>
+    </div>
+  </div>
+
+  <script src="script2.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</body>
+</html>
