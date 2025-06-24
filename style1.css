@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+.player-container {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 320px;
+  padding: 20px;
+  text-align: center;
+}
+#playlist {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+#playlist li {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+#playlist li:hover {
+  background: #f9f9f9;
+}
+#playlist li.active {
+  background: #0077cc;
+  color: white;
+}
+#now-playing {
+  margin-top: 10px;
+  font-weight: bold;
+}
